@@ -48,13 +48,11 @@ class Credit_card
     end
 end
 
+newcard = Credit_card.new(4194560385008504)
+newcard.sum
 
-module Luhn
-  def self.is_valid?(number)
-    newcard = Credit_card.new(number)
-    newcard.is_valid?
-  end
+if newcard.is_valid?
+  puts "Your Credit Card number is valid"
+else
+  puts "Your Credit Card number is not valid"
 end
-
-
-
